@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    p命名空间注入，可以知己诶注入属性的值 property-->
+       <bean id="user" class="com.mf.pojo.User" p:name="阿福" p:age="18"/>
+<!--    c命名空间注入，通过构造器注入:construct-arg-->
+<!--    scope="prototype" 原型模式每次从容器中get的时候都会产生新对象 -->
+       <bean id="user2" class="com.mf.pojo.User" c:name="江西" p:age="19" scope="prototype"/>
+
+
+
+</beans>

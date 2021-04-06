@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--       spring通过无参构造赋值此时不能有有参构造
+           有参构造
+           方法一：下标赋值
+       <bean id="user" class="com.mf.pojo.User">
+           <constructor-arg index="0" value="马富哈哈"/>
+       </bean>
+            方法二：通过类型type创建，不建议使用
+        <bean id="user" class="com.mf.pojo.User">
+            <constructor-arg type="java.lang.String" value="我十二回"/>
+        </bean>
+             方法三：直接通过参数名赋值,推荐使用
+-->
+        <bean id="user" class="com.mf.pojo.User">
+            <constructor-arg name="name" value="呵呵"/>
+        </bean>
+<!--    设置别名
+        <alias name="user" alias="hahaha"/>
+-->
+<!--
+       id:bean的唯一标识符，也就是相当于我们学的对象名字
+       class:bean对象所对应的全限名：包名+类型
+       name:也就是别名，而且可取多个
+-->
+       <bean id="userT" class="com.mf.pojo.UserT" name="hhh,uuu">
+          <property name="name" value="马富说"/>
+       </bean>
+
+
+
+</beans>

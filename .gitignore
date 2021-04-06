@@ -1,0 +1,8 @@
+# Project exclude paths
+/Spring-05j-Autowired/target/
+/Spring-06-anno/target/
+/Spring-07-appconifg/target/
+/Spring-08-proxy/target/
+/Spring-09-aop/target/
+/Spring-10-mybatis/target/
+/Spring-11-transaction/target/
