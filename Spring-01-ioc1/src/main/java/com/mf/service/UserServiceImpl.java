@@ -11,7 +11,8 @@ import com.mf.dao.UserDaoOracleImpl;
  */
 public class UserServiceImpl implements UserDao{
 
-
+    //传统方式  private UserDao userDao=new UserDaoImpl();
+    //实现方式不一样，UserDaoImpl()每次都需要手动改
     private UserDao userDao;
     //利用set动态实现值的注入
     public void setUserDao(UserDao userDao) {
